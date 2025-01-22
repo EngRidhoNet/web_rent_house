@@ -37,9 +37,10 @@ class Listing extends Model
         return 'slug';
     }
 
-    public function setTittleAttribute($value)
+    public function setTitleAttribute($value)
     {
-        $this->attributes['tittle'] = $value;
+        $this->attributes['title'] = $value;
         $this->attributes['slug'] = Str::slug($value);
     }
+
 }
